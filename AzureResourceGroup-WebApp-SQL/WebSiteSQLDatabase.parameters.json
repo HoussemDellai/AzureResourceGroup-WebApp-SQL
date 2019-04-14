@@ -3,13 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "hostingPlanName": {
-      "value": null
+      "value": "test-plan"
     },
     "administratorLogin": {
-      "value": null
+      "value": "houssem"
     },
     "databaseName": {
-      "value": null
+      "value": "products"
+    },
+    "skuName": {
+      "value": "D1"
     }
   }
 }
