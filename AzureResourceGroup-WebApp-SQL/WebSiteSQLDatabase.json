@@ -8,9 +8,9 @@
     },
     "skuName": {
       "type": "string",
-      "defaultValue": "F1",
+      "defaultValue": "B2",
       "allowedValues": [
-        "F1",
+        "F1"
         "D1",
         "B1",
         "B2",
@@ -79,7 +79,7 @@
     }
   },
   "variables": {
-    "webSiteName": "[concat('webSite', uniqueString(resourceGroup().id))]",
+    "webSiteName": "[concat('webSite', mani000123232)]",
     "sqlserverName": "[concat('sqlserver', uniqueString(resourceGroup().id))]"
   },
   "resources": [
