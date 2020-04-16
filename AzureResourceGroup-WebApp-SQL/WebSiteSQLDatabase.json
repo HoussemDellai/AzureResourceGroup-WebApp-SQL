@@ -79,7 +79,7 @@
     }
   },
   "variables": {
-    "webSiteName": "[concat('webSite', mani000123232)]",
+    "webSiteName": "[concat('webSite', uniqueString(resourceGroup().id))]",
     "sqlserverName": "[concat('sqlserver', uniqueString(resourceGroup().id))]"
   },
   "resources": [
@@ -124,7 +124,7 @@
           "name": "AllowAllWindowsAzureIps",
           "properties": {
             "endIpAddress": "0.0.0.0",
-            "startIpAddress": "0.0.0.0"
+            "startIpAddress": "10.0.0.0"
           }
         }
       ]
