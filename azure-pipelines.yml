@@ -1,7 +1,11 @@
 # Starter pipeline
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'AzureResourceGroup-WebApp-SQL'
+    Contents: '*.json'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)''
     ArtifactName: 'drop'
     publishLocation: 'Container'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
